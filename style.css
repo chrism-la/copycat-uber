@@ -21,11 +21,12 @@ img {
 
 .main-section {
    display: flex;
+   width: 100%;
    background-color: black;
    color: white;
 }
 
-.main-sectiontxt,
+.main-sectiontext,
 .main-img {
    width: 50%;
 }
