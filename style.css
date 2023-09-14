@@ -1,0 +1,75 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+img {
+   width: 100%;
+}
+
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   background-color: black;
+   color: white;
+}
+
+.login {
+   display: flex;
+}
+
+.main-section {
+   display: flex;
+   background-color: black;
+   color: white;
+}
+
+.main-sectiontxt,
+.main-img {
+   width: 50%;
+}
+
+.signup-login {
+   display: flex;
+}
+
+.signup {
+   display: flex;
+}
+
+.login {
+   display: flex;
+}
+
+.footer {
+   background-color: black;
+   color: white;
+}
+
+.policy {
+   display: flex;
+   justify-content: space-between;
+}
+
+.links {
+   display: flex;
+}
+
+.icon-section {
+   display: flex;
+   justify-content: space-between;
+}
+
+.losangeles {
+   display: flex;
+}
+
+.copyright {
+   display: flex;
+   justify-content: space-between;
+}
+
+.privacy {
+   display: flex;
+}
