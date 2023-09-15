@@ -2,33 +2,78 @@
    box-sizing: border-box;
    margin: 0;
    padding: 0;
+   font-family: sans-serif;
+}
+
+body {
+   background-color: black;
 }
 
 img {
    width: 100%;
 }
 
-.navbar {
+a {
+   text-decoration: none;
+   color: white;
+}
+
+nav {
    display: flex;
    justify-content: space-between;
-   background-color: black;
    color: white;
+   margin: 20px 20px 5px 20px;
 }
 
 .login {
    display: flex;
+   align-items: center;
+}
+
+.login > p {
+   margin: 10px;
+}
+
+.login > button {
+   border-radius: 15px;
+   padding: 7px;
+   border: none;
 }
 
 .main-section {
    display: flex;
    width: 100%;
-   background-color: black;
    color: white;
 }
 
-.main-sectiontext,
+.main-section-text,
 .main-img {
    width: 50%;
+}
+
+.main-section-text {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: start;
+   margin-left: 100px;
+}
+
+.main-first-text {
+   font-size: 45px;
+   font-weight: bold;
+}
+
+.main-second-text {
+   margin-top: 20px;
+}
+
+.main-img {
+   margin: 25px 100px 25px 0px;
+}
+
+.article-section {
+   background-color: white;
 }
 
 .signup-login {
@@ -44,7 +89,6 @@ img {
 }
 
 .footer {
-   background-color: black;
    color: white;
 }
 
