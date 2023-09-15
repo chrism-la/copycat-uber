@@ -20,6 +20,10 @@ a {
    color: white;
 }
 
+li {
+   list-style: none;
+}
+
 /* Presets End */
 
 /* Navigation Bar */
@@ -36,6 +40,10 @@ nav {
    align-items: center;
 }
 
+.account>i {
+   font-size: 20px;
+}
+
 .account>p {
    margin: 10px;
 }
@@ -50,18 +58,18 @@ nav {
 
 /* Main Section */
 
-.main-section {
+main {
    display: flex;
    width: 100%;
    color: white;
 }
 
-.main-section-text,
+.main-text,
 .main-img {
    width: 50%;
 }
 
-.main-section-text {
+.main-text {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -87,12 +95,12 @@ nav {
 
 /* Article Section */
 
-.article-section {
+article {
    background-color: white;
    padding: 40px 80px 40px 80px;
 }
 
-.signup-login {
+.article-buttons {
    display: flex;
 }
 
@@ -108,11 +116,12 @@ nav {
    font-size: 20px;
 }
 
-i {
+.signup>i,
+.login>i {
    font-size: 30px;
 }
 
-.article {
+.article-text {
    margin: 80px 20px 10px 20px;
    line-height: 25px;
    font-size: 14px;
@@ -122,35 +131,75 @@ i {
 
 /* Footer Section */
 
-.footer {
+footer {
    color: white;
+   margin: 50px 100px 80px 100px;
 }
 
 .policy {
    display: flex;
    justify-content: space-between;
+   line-height: 30px;
+   text-align: end;
 }
 
 .links {
    display: flex;
+   margin-top: 75px;
+   justify-content: space-between;
+   line-height: 40px;
+}
+
+.links>div>h2 {
+   font-size: 18px;
 }
 
 .icon-section {
    display: flex;
    justify-content: space-between;
+   margin: 75px 0px;
 }
 
-.losangeles {
+.icons>a>i {
+   font-size: 15px;
+   padding-right: 80px;
+}
+
+.location {
    display: flex;
+   align-items: center;
+}
+
+.location>i {
+   font-size: 15px;
+   margin: 0px 10px;
+}
+
+.button-section {
+   margin: 40px 0px;
+}
+
+.button-section>button {
+   background-color: black;
+   color: white;
+   border: 1px solid white;
+   border-radius: 2px;
+   font-size: 20px;
+   padding: 5px;
 }
 
 .copyright {
    display: flex;
    justify-content: space-between;
+   margin: 20px 0px;
 }
 
 .privacy {
    display: flex;
+}
+
+.privacy>p {
+   padding-right: 20px;
 }
 
 /* Footer Section Ends */
