@@ -1,3 +1,5 @@
+/* Presets */
+
 * {
    box-sizing: border-box;
    margin: 0;
@@ -18,6 +20,10 @@ a {
    color: white;
 }
 
+/* Presets End */
+
+/* Navigation Bar */
+
 nav {
    display: flex;
    justify-content: space-between;
@@ -25,20 +31,24 @@ nav {
    margin: 20px 20px 5px 20px;
 }
 
-.login {
+.account {
    display: flex;
    align-items: center;
 }
 
-.login > p {
+.account>p {
    margin: 10px;
 }
 
-.login > button {
+.account>button {
    border-radius: 15px;
    padding: 7px;
    border: none;
 }
+
+/* Navigation Bar Ends */
+
+/* Main Section */
 
 .main-section {
    display: flex;
@@ -66,27 +76,51 @@ nav {
 
 .main-second-text {
    margin-top: 20px;
+   font-size: 12px;
 }
 
 .main-img {
    margin: 25px 100px 25px 0px;
 }
 
+/* Main Section Ends */
+
+/* Article Section */
+
 .article-section {
    background-color: white;
+   padding: 40px 80px 40px 80px;
 }
 
 .signup-login {
    display: flex;
 }
 
-.signup {
-   display: flex;
-}
-
+.signup,
 .login {
    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 50%;
+   padding-bottom: 30px;
+   margin: 0px 20px 0px 20px;
+   border-bottom: 2px solid gray;
+   font-size: 20px;
 }
+
+i {
+   font-size: 30px;
+}
+
+.article {
+   margin: 80px 20px 10px 20px;
+   line-height: 25px;
+   font-size: 14px;
+}
+
+/* Article Section Ends */
+
+/* Footer Section */
 
 .footer {
    color: white;
@@ -118,3 +152,5 @@ nav {
 .privacy {
    display: flex;
 }
+
+/* Footer Section Ends */
