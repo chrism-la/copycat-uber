@@ -43,17 +43,17 @@ h1 {
    font-weight: lighter;
 }
 
-.account {
+.nav-menu {
    display: flex;
 }
 
-.account>button {
+.nav-menu>button {
    border-radius: 15px;
    padding: 7px;
    border: none;
 }
 
-.language {
+.btn-language {
    display: flex;
    background-color: black;
    color: white;
@@ -71,12 +71,12 @@ main {
    color: white;
 }
 
-.main-text,
+.main-text-box,
 .main-img {
    width: 50%;
 }
 
-.main-text {
+.main-text-box {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -84,7 +84,7 @@ main {
    margin-left: 100px;
 }
 
-.main-first-text {
+.main-text {
    font-size: 45px;
    font-weight: bold;
 }
@@ -106,12 +106,12 @@ main {
 
 /* Article Section */
 
-article {
+section {
    background-color: white;
    padding: 40px 80px 40px 80px;
 }
 
-.article-buttons {
+.section-btn-box {
    display: flex;
 }
 
@@ -132,7 +132,7 @@ article {
    font-size: 30px;
 }
 
-.article-text {
+.section-text {
    margin: 80px 20px 10px 20px;
    line-height: 25px;
    font-size: 14px;
@@ -147,31 +147,31 @@ footer {
    margin: 50px 100px 80px 100px;
 }
 
-.policy {
+.footer-policy-box {
    display: flex;
    justify-content: space-between;
    line-height: 30px;
    text-align: end;
 }
 
-.links {
+.footer-link-box {
    display: flex;
    margin-top: 75px;
    justify-content: space-between;
    line-height: 40px;
 }
 
-.links>div>h2 {
+.footer-link-box>div>h2 {
    font-size: 18px;
 }
 
-.icon-section {
+.footer-icon-box {
    display: flex;
    justify-content: space-between;
    margin: 75px 0px;
 }
 
-.icons>a>i {
+.icons>a {
    font-size: 15px;
    padding-right: 80px;
 }
@@ -186,30 +186,31 @@ footer {
    margin: 0px 10px;
 }
 
-.button-section {
+.footer-btn-box {
    margin: 40px 0px;
 }
 
-.button-section>button {
+.footer-btn-box>button {
    background-color: black;
    color: white;
    border: 1px solid white;
-   border-radius: 2px;
+   border-radius: 6px;
    font-size: 20px;
    padding: 5px;
 }
 
-.copyright {
+.footer-copyright {
    display: flex;
    justify-content: space-between;
    margin: 20px 0px;
+   opacity: 60%;
 }
 
-.privacy {
+.footer-more-links {
    display: flex;
 }
 
-.privacy>p {
+.footer-more-links>p {
    padding-right: 20px;
 }
 
