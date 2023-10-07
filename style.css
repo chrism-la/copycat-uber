@@ -39,23 +39,26 @@ nav {
    margin: 20px 20px 5px;
 }
 
+h1 {
+   font-weight: lighter;
+}
+
 .account {
    display: flex;
-   align-items: center;
-}
-
-.account>i {
-   font-size: 1em;
-}
-
-.account>p {
-   margin: 10px;
 }
 
 .account>button {
    border-radius: 15px;
    padding: 7px;
    border: none;
+}
+
+.language {
+   display: flex;
+   background-color: black;
+   color: white;
+   font-size: 1em;
+   letter-spacing: 5px;
 }
 
 /* Navigation Bar Ends */
