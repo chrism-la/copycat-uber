@@ -24,6 +24,10 @@ li {
    list-style: none;
 }
 
+button {
+   cursor: pointer;
+}
+
 /* Presets End */
 
 /* Navigation Bar */
