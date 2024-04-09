@@ -1,0 +1,194 @@
+/* Variables */
+/* Mixins */
+/* Presets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 20px 20px 10px;
+}
+nav h1 {
+  font-weight: lighter;
+}
+nav .nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .nav-menu > button {
+  border-radius: 15px;
+  padding: 10px;
+  border: none;
+}
+
+.btn-language {
+  display: flex;
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 5px;
+}
+
+/* Main Section */
+main {
+  display: flex;
+  width: 100%;
+  color: white;
+}
+main .main-text-box,
+main .main-img {
+  width: 50%;
+}
+main .main-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-left: 40px;
+}
+main .main-text-box .main-text {
+  font-size: 45px;
+  font-weight: bold;
+}
+main .main-text-box .main-second-text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+main .main-img {
+  margin: 20px 40px 20px 0;
+}
+main .main-img > img {
+  border-radius: 20px;
+}
+
+/* Article Section */
+section {
+  background-color: white;
+  padding: 20px 40px 20px 40px;
+}
+section .section-btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .section-btn-box .signup,
+section .section-btn-box .login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  padding-bottom: 20px;
+  margin: 0 20px 0 20px;
+  border-bottom: 2px solid gray;
+  font-size: 20px;
+}
+section .section-btn-box .signup > i,
+section .section-btn-box .login > i {
+  font-size: 45px;
+}
+section .section-btn-box .section-text {
+  margin: 40px 20px 10px 20px;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+/* Footer Section */
+footer {
+  color: white;
+  margin: 20px 40px 40px 40px;
+}
+footer .footer-policy-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 20px;
+  text-align: end;
+}
+footer .footer-link-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  justify-content: space-between;
+  line-height: 40px;
+}
+footer .footer-link-box > div > h2 {
+  font-size: 20px;
+}
+footer .footer-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+footer .footer-icon-box .icons > a {
+  font-size: 14px;
+  padding-right: 40px;
+}
+footer .location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .location > i {
+  font-size: 14px;
+  margin: 0 20px;
+}
+footer .footer-btn-box {
+  margin: 20px 0;
+}
+footer .footer-btn-box > button {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 6px;
+  font-size: 20px;
+  padding: 10px;
+}
+footer .footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  opacity: 60%;
+}
+footer .footer-more-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-more-links > p {
+  padding-right: 20px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,235 @@
+/* Variables */
+$primary-color: black;
+$secondary-color: white;
+$accent-color: gray;
+
+// Spacing
+$spacing-small: 10px;
+$spacing-medium: 20px;
+$spacing-large: 40px;
+
+// Font sizes
+$font-size-large: 45px;
+$font-size-medium: 20px;
+$font-size-small: 14px;
+
+// Border radius
+$border-radius-small: 6px;
+$border-radius-medium: 15px;
+$border-radius-large: 20px;
+
+/* Mixins */
+@mixin rem($property, $values...) {
+    $rem-values: ();
+    @each $value in $values {
+        $rem-values: append($rem-values, $value / 16px * 1rem, comma);
+    }
+    #{$property}: $rem-values;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Presets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: $primary-color;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $secondary-color;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: $secondary-color;
+    margin: $spacing-medium $spacing-medium $spacing-small;
+
+    h1 {
+        font-weight: lighter;
+    }
+
+    .nav-menu {
+        @include flex-center;
+
+        > button {
+            border-radius: $border-radius-medium;
+            padding: $spacing-small;
+            border: none;
+        }
+    }
+}
+
+.btn-language {
+    display: flex;
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-size: 1em;
+    letter-spacing: 5px;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    width: 100%;
+    color: $secondary-color;
+
+    .main-text-box,
+    .main-img {
+        width: 50%;
+    }
+
+    .main-text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-left: $spacing-large;
+
+        .main-text {
+            font-size: $font-size-large;
+            font-weight: bold;
+        }
+
+        .main-second-text {
+            margin-top: $spacing-medium;
+            font-size: $font-size-small;
+        }
+    }
+
+    .main-img {
+        margin: $spacing-medium $spacing-large $spacing-medium 0;
+
+        > img {
+            border-radius: $border-radius-large;
+        }
+    }
+}
+
+/* Article Section */
+section {
+    background-color: $secondary-color;
+    padding: $spacing-medium $spacing-large $spacing-medium $spacing-large;
+
+    .section-btn-box {
+        @include flex-center;
+
+        .signup,
+        .login {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 50%;
+            padding-bottom: $spacing-medium;
+            margin: 0 $spacing-medium 0 $spacing-medium;
+            border-bottom: 2px solid $accent-color;
+            font-size: $font-size-medium;
+
+            > i {
+                font-size: $font-size-large;
+            }
+        }
+
+        .section-text {
+            margin: $spacing-large $spacing-medium $spacing-small $spacing-medium;
+            line-height: $spacing-medium;
+            font-size: $font-size-small;
+        }
+    }
+}
+
+/* Footer Section */
+footer {
+    color: $secondary-color;
+    margin: $spacing-medium $spacing-large $spacing-large $spacing-large;
+
+    .footer-policy-box {
+        @include flex-center;
+        justify-content: space-between;
+        line-height: $spacing-medium;
+        text-align: end;
+    }
+
+    .footer-link-box {
+        @include flex-center;
+        margin-top: $spacing-large;
+        justify-content: space-between;
+        line-height: $spacing-large;
+
+        > div > h2 {
+            font-size: $font-size-medium;
+        }
+    }
+
+    .footer-icon-box {
+        @include flex-center;
+        justify-content: space-between;
+        margin: $spacing-large 0;
+
+        .icons > a {
+            font-size: $font-size-small;
+            padding-right: $spacing-large;
+        }
+    }
+
+    .location {
+        @include flex-center;
+
+        > i {
+            font-size: $font-size-small;
+            margin: 0 $spacing-medium;
+        }
+    }
+
+    .footer-btn-box {
+        margin: $spacing-medium 0;
+
+        > button {
+            background-color: $primary-color;
+            color: $secondary-color;
+            border: 1px solid $secondary-color;
+            border-radius: $border-radius-small;
+            font-size: $font-size-medium;
+            padding: $spacing-small;
+        }
+    }
+
+    .footer-copyright {
+        @include flex-center;
+        justify-content: space-between;
+        margin: $spacing-medium 0;
+        opacity: 60%;
+    }
+
+    .footer-more-links {
+        @include flex-center;
+
+        > p {
+            padding-right: $spacing-medium;
+        }
+    }
+}
